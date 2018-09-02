@@ -1,0 +1,31 @@
+[user]
+	name = Roger Camargo
+	email = huogerac@gmail.com
+
+[color]
+   diff = auto
+   status = auto
+   branch = auto
+   interactive = auto
+   ui = auto
+
+[color "branch"]
+   current = green bold
+   local = green
+   remote = red bold
+
+[color "status"]
+   added = green bold
+   changed = yellow bold
+   untracked = red
+
+[alias]
+   st = status
+   ci = commit
+   df = diff
+   co = checkout
+   br = branch
+   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+
+[push]
+	default = simple
