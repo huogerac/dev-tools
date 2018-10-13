@@ -3,12 +3,12 @@
 # This script is based on
 # https://medium.com/welcome-to-the-django/guia-definitivo-para-organizar-meu-ambiente-python-a16e2479b753
 
-PYTHON2_VERSION='2.7.12'
+PYTHON2_VERSION='2.7.15'
 PYTHON3_VERSION='3.5.6'
 
 sudo apt-get install -y git python-pip make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev
 pip install --upgrade pip
-#sudo pip install virtualenvwrapper
+
 sudo apt install python3-pip
 sudo pip3 install virtualenvwrapper
 
@@ -17,7 +17,7 @@ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-vi
 git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
 
 mkdir -p ~/.ve
-mkdir -p ~/workspacepy
+mkdir -p ~/workspace
 
 echo 'export WORKON_HOME=~/.ve' >> ~/.bashrc
 echo 'export PROJECT_HOME=~/workspace' >> ~/.bashrc
@@ -38,16 +38,17 @@ pyenv virtualenv $PYTHON2_VERSION tools2
 
 pyenv activate jupyter3
 pip install jupyter
-# python -m ipykernel install --user
+pip install ipykernel
+python -m ipykernel install --user
 pyenv deactivate
 
-# pyenv activate tools3
-# pip install youtube-dl gnucash-to-beancount rows 
-# pyenv deactivate
+pyenv activate tools3
+pip install flake8
+pyenv deactivate
 
 pyenv activate ipython2
 pip install ipykernel
-# python -m ipykernel install --user
+python -m ipykernel install --user
 pyenv deactivate
 
 pyenv activate tools2
@@ -68,6 +69,7 @@ pyenv which jupyter
 pyenv which ipython
 pyenv which ipython2
 pyenv which fab
+pyenv which flake8
 
 # usage samples:
 
