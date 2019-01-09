@@ -6,6 +6,9 @@
 PYTHON2_VERSION='2.7.15'
 PYTHON3_VERSION='3.5.6'
 
+# TODO
+# https://gist.github.com/luzfcb/1a7f64adf5d12c2d357d0b4319fe9dcd
+
 sudo apt-get install -y git python-pip make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev
 pip install --upgrade pip
 
