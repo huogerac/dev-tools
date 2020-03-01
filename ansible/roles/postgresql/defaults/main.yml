@@ -1,0 +1,3 @@
+---
+enable_timescaledb: false
+timescaledb_version: 1.6.0
