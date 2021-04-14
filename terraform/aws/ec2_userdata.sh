@@ -13,8 +13,8 @@ export LC_ALL="pt_BR.UTF-8"
 export LC_CTYPE="pt_BR.UTF-8"
 sudo dpkg-reconfigure locales
 
-sudo mkdir -p /var/log/aweb/fluentd
-sudo chown ubuntu:td-agent -R /var/log/aweb
-sudo chmod 775 -R /var/log/aweb
+sudo mkdir -p /var/log/webapp/fluentd
+sudo chown ubuntu:td-agent -R /var/log/webapp
+sudo chmod 775 -R /var/log/webapp
 
 pip install boto3
