@@ -3,7 +3,7 @@
 ## 1 - Basic
 
 - gdebi (package manager)
-- zsh, htop, vim & git
+- zsh, git, htop, vim, curl, wget, & jq
 - tlp (battery saver)
 
 - (Optional) Icons & Wallpaper
@@ -15,8 +15,16 @@
 - Albert
 - VSCode
 - ag, Kompare & GitK
+- key up (filter history)
+- fzf (Ctrl + R)
 
 # 3 - Frontend Basic
 
 - Node, npm, yarn (via NVM)
 - Docker & Docker-compose
+
+# 4 - Python Basic
+
+- Essencial python libs
+- pyenv
+- virtualenvwrapper

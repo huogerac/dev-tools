@@ -33,6 +33,17 @@ sudo apt install -y silversearcher-ag
 sudo apt install -y Kompare gitk
 
 
+# Filtered history using arrow up
+echo '## arrow up' >> ~/.inputrc
+echo '"\e[A":history-search-backward' >> ~/.inputrc
+echo '## arrow down' >> ~/.inputrc
+echo '"\e[B":history-search-forward' >> ~/.inputrc
+
+
+# Better CTRL + R (https://github.com/junegunn/fzf)
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
 # https://snapcraft.io/install/code/elementary
 # sudo apt install -y snapd
 # sudo snap install code --classic
