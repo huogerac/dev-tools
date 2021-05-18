@@ -27,7 +27,7 @@ sudo dpkg -i code_1.55.2-1618307277_amd64.deb
 # sudo gdebi google-chrome-stable_current_amd64.deb
 
 # Shell Utilities
-sudo apt install -y silversearcher-ag
+sudo apt install -y silversearcher-ag tree wget
 
 # Graphical tools
 sudo apt install -y Kompare gitk
@@ -48,4 +48,43 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 # sudo apt install -y snapd
 # sudo snap install code --classic
 
+# Postman (https://www.postman.com/) - Alternative: VSCode Thunder Client
+cd ~/Downloads
+wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+sudo tar -xzf postman.tar.gz -C /opt
+rm postman.tar.gz
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
 
+
+## get Postman to show up in the Unity Launcher:
+cat > ~/.local/share/applications/postman.desktop <<EOL
+[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Exec=postman
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Development;
+EOL
+
+# Disk Tools
+sudo apt install -y gnome-disk-utility ncdu
+
+# Videos
+sudo apt install -y ffmpeg vlc
+
+## DBEaver (Database clietnt)
+## I rather prefer to not install Java :/
+sudo apt -y install default-jdk
+
+java -version
+
+wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+
+sudo apt update
+sudo apt -y  install dbeaver-ce
+
+# For fun
+sudo apt -y  install hollywood

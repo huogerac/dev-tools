@@ -55,6 +55,9 @@ pyenv virtualenv $PYTHON3_VERSION py3tools
 
 pyenv activate py3tools
 pip install ansible
+pip install cookiecutter
+pip install bpython
+pip install bpytop
 
 pyenv deactivate
 

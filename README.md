@@ -1,6 +1,6 @@
 # DEV-TOOLS
 
-> This is a collection of scripts to help you AVOID the DRY (Don't Repeat Yourself) setup your environment (local/production)
+> This is a collection of scripts to help you AVOID the DRY (Don't Repeat Yourself) to setup your environment (local/production)
 
 ## LINUX
 
