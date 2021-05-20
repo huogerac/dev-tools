@@ -1,7 +1,0 @@
----
-
-# Postgres / MariaDB
-database_name: mydb
-database_user: myuser
-database_password: mypassword
-
