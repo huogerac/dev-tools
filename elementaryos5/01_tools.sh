@@ -27,7 +27,7 @@ sudo dpkg -i code_1.55.2-1618307277_amd64.deb
 # sudo gdebi google-chrome-stable_current_amd64.deb
 
 # Shell Utilities
-sudo apt install -y silversearcher-ag tree wget
+sudo apt install -y silversearcher-ag tree htop jq
 
 # Graphical tools
 sudo apt install -y Kompare gitk

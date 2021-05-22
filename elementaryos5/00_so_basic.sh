@@ -3,7 +3,7 @@
 sudo apt update
 
 # Essencial
-sudo apt install -y gdebi zsh git vim htop wget curl jq
+sudo apt install -y gdebi zsh git vim wget curl
 
 # Battery saver
 sudo apt install -y tlp tlp-rdw

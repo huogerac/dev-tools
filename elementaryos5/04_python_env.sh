@@ -2,7 +2,7 @@
 
 # This script is based on
 # https://medium.com/welcome-to-the-django/guia-definitivo-para-organizar-meu-ambiente-python-a16e2479b753
-#  https://www.marc-richter.info/using-pyenv-to-manage-your-python-interpreters/
+# https://www.marc-richter.info/using-pyenv-to-manage-your-python-interpreters/
 
 PYTHON2_VERSION='2.7.17'
 PYTHON3_VERSION='3.8.9'
@@ -54,10 +54,9 @@ pyenv install $PYTHON3_VERSION
 pyenv virtualenv $PYTHON3_VERSION py3tools
 
 pyenv activate py3tools
-pip install ansible
-pip install cookiecutter
-pip install bpython
-pip install bpytop
+
+pip install ansible cookiecutter bpython bpytop black pylint
+# pip install flake8
 
 pyenv deactivate
 

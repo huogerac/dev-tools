@@ -15,3 +15,8 @@ Partitions to my 256GB SSD Hard drive:
 /dev/sda4         1 GB  /boot/efi
 /dev/sda5       1,5 GB  /boot
 ```
+
+## Distros
+
+- [Elementary OS](https://github.com/huogerac/dev-tools/tree/master/elementaryos5)
+- [Ubuntu 18](https://github.com/huogerac/dev-tools/tree/master/ubuntu)
