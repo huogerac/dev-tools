@@ -20,11 +20,11 @@
 - [Kompare](https://apps.kde.org/kompare/) - Graphical folders/files diff
 - [GitK](https://www.atlassian.com/git/tutorials/gitk) - Graphical Git client
 - [fzf](https://github.com/junegunn/fzf) - A better Ctrl + R (Thanks Rafael Lopes)
+- key up (filter history)
 - [jq](https://stedolan.github.io/jq/) - JSON cmd helper (Thanks Veronica)
-- [Postman](https://www.postman.com/) - API Client (Migration to VSCode extension)
+- [Postman](https://www.postman.com/) - API Client (Using VSCode extension)
 - [ncdu](https://dev.yorhel.nl/ncdu) - Disk usage helper
 - [DBeaver](https://dbeaver.io/) - Database client - it needs Java :(
-- key up (filter history)
 - htop, tree, disk-utility
 - vlc & ffmpeg - Video utilities
 - [Audacity](https://www.audacityteam.org/) - Audio utilities

@@ -20,3 +20,4 @@ Partitions to my 256GB SSD Hard drive:
 
 - [Elementary OS](https://github.com/huogerac/dev-tools/tree/master/elementaryos5)
 - [Ubuntu 18](https://github.com/huogerac/dev-tools/tree/master/ubuntu)
+- Mint
