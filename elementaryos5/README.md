@@ -24,7 +24,7 @@
 - [jq](https://stedolan.github.io/jq/) - JSON cmd helper (Thanks Veronica)
 - [Postman](https://www.postman.com/) - API Client (Using VSCode extension)
 - [ncdu](https://dev.yorhel.nl/ncdu) - Disk usage helper
-- [DBeaver](https://dbeaver.io/) - Database client - it needs Java :(
+- [DBeaver](https://dbeaver.io/) - Java :( Database client (Thanks Erle)
 - htop, tree, disk-utility
 - vlc & ffmpeg - Video utilities
 - [Audacity](https://www.audacityteam.org/) - Audio utilities
