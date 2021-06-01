@@ -13,12 +13,12 @@
 
 - [OhMyZsh](https://ohmyz.sh/) - A fancy shell
 - [Plank](https://launchpad.net/plank) - Simple dock station
-- [Tilix](https://gnunn1.github.io/tilix-web/) - A better terminal
-- [Albert](https://github.com/albertlauncher/albert) - Launcher
+- [Tilix](https://gnunn1.github.io/tilix-web/) - A better terminal (like tmux, terminator)
+- [Albert](https://github.com/albertlauncher/albert) - App Launcher
 - [VSCode](https://code.visualstudio.com/) - Code Editor
-- [ag](https://github.com/ggreer/the_silver_searcher) - Text search
+- [ag](https://github.com/ggreer/the_silver_searcher) - Text search (like grep)
 - [Kompare](https://apps.kde.org/kompare/) - Graphical folders/files diff
-- [GitK](https://www.atlassian.com/git/tutorials/gitk) - Graphical Git client
+- [GitK](https://www.atlassian.com/git/tutorials/gitk) - Graphical Git history
 - [fzf](https://github.com/junegunn/fzf) - A better Ctrl + R (Thanks Rafael Lopes)
 - key up (filter history)
 - [jq](https://stedolan.github.io/jq/) - JSON cmd helper (Thanks Veronica)
@@ -49,3 +49,4 @@
 - bpython
 - black
 - pylint
+- commitizen

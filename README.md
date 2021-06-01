@@ -2,9 +2,13 @@
 
 > This is a collection of scripts to help you AVOID the DRY (Don't Repeat Yourself) to setup your environment (local/production)
 
+## WHY?
+
+It helps me to setup my developer environment in few minutes. (for example, after formatting or switching the linux distro)
+
 ## LINUX
 
-First, I like to create partitions manually, this help me format my computer and make it ready to code in few minutes.
+First, I like to create partitions manually, this help me formatting my computer without losing my files or requiring backup.
 
 ```bash
 Partitions to my 256GB SSD Hard drive:
@@ -16,8 +20,10 @@ Partitions to my 256GB SSD Hard drive:
 /dev/sda5       1,5 GB  /boot
 ```
 
+Then, open each script (inside your distro) and install just what you need...
+
 ## Distros
 
 - [Elementary OS](https://github.com/huogerac/dev-tools/tree/master/elementaryos5)
-- [Ubuntu 18](https://github.com/huogerac/dev-tools/tree/master/ubuntu)
-- Mint
+- Ubuntu 18/20 [Working in progress]
+- Mint [Working in progress]
