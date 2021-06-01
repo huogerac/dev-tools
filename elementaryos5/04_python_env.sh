@@ -55,7 +55,7 @@ pyenv virtualenv $PYTHON3_VERSION py3tools
 
 pyenv activate py3tools
 
-pip install ansible cookiecutter bpython bpytop black pylint
+pip install ansible cookiecutter bpython bpytop black pylint commitizen
 # pip install flake8
 
 pyenv deactivate
