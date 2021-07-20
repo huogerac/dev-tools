@@ -74,6 +74,9 @@ sudo apt install -y gnome-disk-utility ncdu
 # Videos
 sudo apt install -y ffmpeg vlc
 
+## Virtualbox
+sudo apt install virtualbox virtualbox-ext-pack
+
 ## DBEaver (Database clietnt)
 ## I rather prefer to not install Java :/
 sudo apt -y install default-jdk
