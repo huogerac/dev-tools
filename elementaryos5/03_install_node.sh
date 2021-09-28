@@ -16,7 +16,7 @@ source ~/.zshrc
 
 nvm ls-remote
 
-export NODE_VERSION='v12.22.1'
+export NODE_VERSION='v14.17.6'
 
 nvm install $NODE_VERSION
 nvm use $NODE_VERSION
