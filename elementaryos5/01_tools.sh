@@ -3,6 +3,10 @@
 # OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# Alternative OhMyZsh
+# echo -e 'export PS1="\W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "' >> ~/.bashrc
+
+
 # Better Terminal (tilix)
 sudo apt-get install -y tilix
 echo 'if [ $TILIX_ID ] || [ $VTE_VERSION ]; then' >> ~/.zshrc
@@ -73,6 +77,9 @@ sudo apt install -y gnome-disk-utility ncdu
 
 # Videos
 sudo apt install -y ffmpeg vlc
+
+# Cut videos
+# https://github.com/mifi/lossless-cut
 
 ## Virtualbox
 sudo apt install virtualbox virtualbox-ext-pack

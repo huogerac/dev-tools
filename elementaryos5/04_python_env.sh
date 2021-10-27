@@ -11,12 +11,14 @@ PYTHON3_VERSION='3.8.9'
 # https://gist.github.com/luzfcb/1a7f64adf5d12c2d357d0b4319fe9dcd
 
 sudo apt-get install -y aria2 build-essential libbz2-dev libffi-dev liblzma-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libssl-dev llvm make tk-dev  xz-utils zlib1g-dev;
+sudo apt-get install -y gettext tcl-dev blt-dev libgdbm-dev python-dev python3-dev libnss3-tools python3-venv libpq-dev keychain;
 # pip install --upgrade pip
 
 # sudo apt install python3-pip
 # sudo pip3 install virtualenvwrapper
 
 # Install pyenv
+# https://github.com/pyenv-win/pyenv-win (For windows)
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
 # Install virtualenvwrapper plugin to pyenv
