@@ -24,6 +24,7 @@ Then, open each script (inside your distro) and install just what you need...
 
 ## Distros
 
+- [Mint 20](https://github.com/huogerac/dev-tools/tree/master/mint20)
 - [Elementary OS](https://github.com/huogerac/dev-tools/tree/master/elementaryos5)
 - Ubuntu 18/20 [Working in progress]
 - Mint [Working in progress]
