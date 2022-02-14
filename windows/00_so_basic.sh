@@ -12,5 +12,10 @@ sudo apt install -y build-essential libssl-dev libz-dev libcurl4-gnutls-dev gett
 git config --global user.name "Roger Camargo"
 git config --global user.email "roger@python.pro.br"
 
-# Git PS1
-echo -e 'export PS1="\W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "' >> ~/.bashrc
+# Git PS1 (add into the ~/.bashrc)
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\u@\h \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
+
+# Settings / System / About / Rename this PC
