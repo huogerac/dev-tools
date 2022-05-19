@@ -1,9 +1,8 @@
 #!/bin/bash
 
-sudo apt update
-
 # Essencial
-sudo apt install -y git vim wget curl
+sudo apt update
+sudo apt install -y git vim wget curl openssh-server htop gitk
 
 # Battery saver
 sudo apt install -y tlp tlp-rdw
@@ -12,6 +11,7 @@ sudo systemctl enable tlp
 
 # Drivers
 # sudo ubuntu-drivers autoinstall
+# sudo apt autoremove
 
 # Git alias and collors
 cp ../.gitconfig ~/
