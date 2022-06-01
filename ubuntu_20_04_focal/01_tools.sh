@@ -4,6 +4,16 @@
 sudo apt-get install -y tilix
 sudo update-alternatives --config x-terminal-emulator
 
+# (Alternative) terminator
+
+# Better prompt (https://starship.rs/)
+# unzip 3270.zip -d ~/.fonts
+# fc-cache -fv
+
+curl -sS https://starship.rs/install.sh | sh
+
+echo 'eval "$(starship init bash)"' >> ~/.bashrc
+
 # Linux Dock
 #sudo apt install plank
 
