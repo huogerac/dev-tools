@@ -55,4 +55,11 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 docker-compose --version
 
+## Instalar`docker compose` no lugar de `docker-compose`
+
+sudo apt-get upgrade docker-ce
+sudo rm $(which docker-compose)
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+docker compose version
+
 # Aproveite a vida com containers!
