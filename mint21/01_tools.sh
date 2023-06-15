@@ -3,6 +3,9 @@
 # unzip 3270.zip -d ~/.fonts
 # fc-cache -fv
 
+# App Launcher
+sudo add-apt-repository ppa:agornostal/ulauncher 
+sudo nala update && sudo nala install ulauncher
 
 # Filtered history using arrow up
 echo '## arrow up' >> ~/.inputrc
@@ -18,8 +21,16 @@ cd ~/.fzf
 # to REMOVE
 # ~/.fzf/uninstall to remove it
 
+# cd ~/Downloads
+# fzf  OR find . | fzf
+
 # Shell Utilities
-sudo nala install -y silversearcher-ag tree jq
+sudo nala install -y silversearcher-ag tree jq btop neofetch
+
+# Better cmd helpers 
+sudo nala install tldr
+tldr -u
+# tldr ps
 
 # Disk Tools
 sudo nala install -y gnome-disk-utility ncdu
@@ -36,17 +47,16 @@ cd -
 
 
 ## Virtualbox
-sudo apt install virtualbox virtualbox-ext-pack
+sudo nala install virtualbox virtualbox-ext-pack
 
 # For fun
-sudo apt -y  install hollywood cmatrix
+sudo nala install hollywood cmatrix
 
 # ls enchancement
 # https://www.linuxhowto.net/exa-a-modern-replacement-for-ls-command/
 
 
 # Zoom
-cd ~/Downloads
-wget https://zoom.us/client/latest/zoom_amd64.deb
-sudo gdebi zoom_amd64.deb
-
+#cd ~/Downloads
+#wget https://zoom.us/client/latest/zoom_amd64.deb
+#sudo gdebi zoom_amd64.deb
