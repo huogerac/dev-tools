@@ -3,6 +3,14 @@
 
 # Isto vai garantir que não temos uma versão errada instalada!
 sudo apt-get remove docker docker.io containerd runc
+# Para remover um docker antigo
+# dpkg -l | grep -i docker
+# sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli docker-compose-plugin
+# sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce docker-compose-plugin
+# sudo rm -rf /var/lib/docker /etc/docker
+# sudo rm /etc/apparmor.d/docker
+# sudo groupdel docker
+# sudo rm -rf /var/run/docker.sock
 
 # Este comando vai garantir que a lista de pacotes não tem erro
 sudo nala update
@@ -22,7 +30,7 @@ apt-cache policy docker-ce
 sudo nala update
 
 # 5 - Agora sim, vamos instalador tudo de docker que precisamos!
-sudo nala install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo nala install docker-ce docker-ce-cli containerd.io
 
 # 6 - Vamos conferir que Docker foi instalado
 sudo systemctl status docker
@@ -49,16 +57,11 @@ sudo usermod -aG docker meu-user   ## update the username string
 # Update the docker-compose
 # https://docs.docker.com/compose/install/
 
-curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url  | grep docker-compose-linux-x86_64 | cut -d '"' -f 4 | wget -qi -
 
-sudo chmod +x docker-compose-linux-x86_64
-sudo mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose
-
+sudo nala install docker-compose 
 docker-compose version
 
-## Instalar`docker compose` no lugar de `docker-compose`
-
-# sudo rm $(which docker-compose)
+sudo nala install docker-compose-plugin
 docker compose version
 
 # Aproveite a vida com containers!

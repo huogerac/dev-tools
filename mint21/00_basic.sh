@@ -26,7 +26,7 @@ sudo nala install tlp
 sudo systemctl enable tlp --now
 
 # Apps
-# Chrome, Plank, vscode
+# Chrome, Plank, vscode, Peek, Flameshot
 
 # Git alias and collors
 cp ../.gitconfig ~/

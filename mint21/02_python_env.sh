@@ -60,10 +60,28 @@ pyenv global $PYTHON3_VERSION py3tools
 exec $SHELL
 
 # checking
-pyenv which python
-pyenv which ansible
-
-
+# pyenv which python
+# pyenv which ansible
+# pyenv local
+# pyenv install --list | grep 3.10
+# pyenv install --list | grep "3\.[81]"
+# pyenv install 3.10.12
+# pyenv virtualenv 3.10.12 pyenv310
+# pyenv local pyenv310
+# pyenv commands
+# pyenv activate
+# pyenv deactivate
+# pyenv global
+# pyenv install
+# pyenv local
+# pyenv uninstall
+# pyenv --version
+# pyenv version
+# pyenv versions
+# pyenv virtualenv-delete
+# pyenv virtualenv-init
+# pyenv virtualenvs
+# pyenv which
 
 # Uninstall Pyenv
 rm -fr ~/.pyenv
