@@ -25,8 +25,12 @@ sudo nala install pass
 sudo nala install tlp
 sudo systemctl enable tlp --now
 
+# App Launcher & App Dock
+# ulauncher.io e Plank
+
 # Apps
-# Chrome, Plank, vscode, Peek, Flameshot
+# Chrome, vscode, Peek, Flameshot, Redshift
+# Gimp, ttf-mscorefonts
 
 # Git alias and collors
 cp ../.gitconfig ~/
