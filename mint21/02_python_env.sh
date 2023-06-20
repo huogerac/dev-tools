@@ -31,6 +31,14 @@ echo '  eval "$(pyenv init -)"'
 echo 'fi'
 echo 'eval "$(pyenv virtualenv-init -)"'
 
+# Adicionar alias para ativar venvs
+# Não lembro a fonte desta dica, mas acredito que é algum do python real
+alias ae='deactivate &> /dev/null; source ./.venv/bin/activate'
+alias de='deactivate'
+
+# Adiciona aqui a dica do Victor de ativar automaticamente
+# com o hook de abrir pasta
+
 exec $SHELL
 
 pyenv versions
