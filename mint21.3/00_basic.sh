@@ -9,6 +9,9 @@ sudo nala install git vim wget curl openssh-server htop
 sudo nala install terminator
 sudo update-alternatives --config x-terminal-emulator
 
+# Second terminal 
+https://app.warp.dev/
+
 # Install a better shell prompt
 curl -sS https://starship.rs/install.sh | sh
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
@@ -65,4 +68,24 @@ sudo systemctl enable tlp --now
 # sudo apt install -y ubuntu-restricted-extras libavcodec-extra libdvd-pkg
 # sudo dpkg-reconfigure libdvd-pkg
 
+# BATTERY LIFE SAVER
+# IMPORTANTE --> CHECK POWERTOP
+ sudo nala install tlp tlp-rdw smartmontools
+ sudo systemctl enable tlp
+ sudo tlp start
+ sudo systemctl status tlp.service
+ sudo tlp-stat
 
+ # To limit the charging % (this works for DELL, might not work other providers)
+ sudo nala install smartmontools smbios-utils
+ sudo smbios-battery-ctl --set-custom-charge-interval 75 80
+ sudo smbios-battery-ctl --set-charging-mode=custom
+ 
+ # To make it charge 100%
+ sudo smbios-battery-ctl --set-charging-mode=adaptive
+
+# Check the battery status/lifey cycle
+upower --enumerate
+upower -i /org/freedesktop/UPower/devices/battery_BAT0
+sudo tlp-stat --battery
+acpi -b
