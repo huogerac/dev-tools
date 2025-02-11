@@ -2,8 +2,15 @@
 # https://computingforgeeks.com/install-docker-docker-compose-on-linux-mint/
 
 # Isto vai garantir que não temos uma versão errada instalada!
-sudo apt-get remove docker docker.io containerd runc
+# GARANTIR QUE NAO TEM DOCKER INSTALADO
 # Para remover um docker antigo
+
+sudo apt-get remove docker docker.io containerd runc
+sudo apt-get purge -y docker-buildx-plugin docker-ce-cli docker-ce-rootless-extras docker-desktop
+sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli docker-compose-plugin
+sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce docker-compose-plugin
+dpkg -l | grep -i docker
+
 # dpkg -l | grep -i docker
 # sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli docker-compose-plugin
 # sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce docker-compose-plugin
@@ -15,6 +22,8 @@ sudo apt-get remove docker docker.io containerd runc
 # Este comando vai garantir que a lista de pacotes não tem erro
 sudo nala update
 
+
+sudo apt-get purge -y docker-buildx-plugin docker-ce-cli docker-ce-rootless-extras docker-desktop
 
 # 1 - Adiciona certificado
 sudo nala install apt-transport-https ca-certificates curl software-properties-common

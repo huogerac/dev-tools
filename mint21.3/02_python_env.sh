@@ -183,3 +183,54 @@ pyenv which flake8
 # workon newproject_py3
 
 # mkvirtualenv -a ~/workspace/existing_py2 -p python2 existing_py2
+
+
+
+##### 
+virtual env modifica o $PATH de forma a aponta para um python dentro 
+de um caminho isolado
+print(sys.path)
+
+# virtualenv
+virtualenv vem com o python, funciona com python 2 (venv nao)
+virtualenv allows create cross python version envs (using -p python3.9)
+virtualenv .venv1
+
+# venv
+venv precisa ser instalado com `apt install python3-venv`
+venv cria a ambientes com a versao especifica do python
+python -m venv .venv2
+
+
+
+## boas praticas
+pip list tem que estar vazia
+instalar pipx
+usando pipx instalar poetry, ansible e ipython
+
+pyenv local 3.12.1
+poetry env use 3.12.1
+
+
+#### UV
+pip install uv
+eval "$(uv generate-shell-completion zsh)"
+
+uv init --app my_project
+uv add
+uv sync
+uv lock
+uv lock --upgrade_package pandas
+uv tree
+uv tool run ruff
+uv tool run ruff check (or uvx ruff check)
+uv tool dir
+uv tool install ruff
+
+----- uv as pyenv
+uv python list
+uv python install 3.12.0
+uv python install '>=3.9,<3.11'
+uv venv --python 3.13.0
+
+https://valatka.dev/2025/01/12/on-killer-uv-feature.html

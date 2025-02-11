@@ -52,6 +52,10 @@ sudo nala install tldr
 tldr -u
 # tldr ps
 
+# copy to clipboard
+sudo nala install xclip
+alias cbcopy='xclip -sel clip'
+
 # Disk Tools
 sudo nala install -y gnome-disk-utility ncdu
 
@@ -114,3 +118,11 @@ echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable
 sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
 sudo nala update
 sudo nala install -y eza
+
+
+# Better ls
+wget https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd_1.1.5_amd64.deb
+sudo dpkg -i lsd_1.1.5_amd64.deb
+
+# Docker Lazy: https://github.com/jesseduffield/lazydocker
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
